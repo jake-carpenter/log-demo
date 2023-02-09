@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogDemo", "LogDemo\LogDemo.csproj", "{0F86C178-05D2-4EEA-970B-8B0BD2CE9D76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDependency", "DemoDependency\DemoDependency.csproj", "{139CBB96-9A18-48E7-AAD6-DE9B13B78FF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F86C178-05D2-4EEA-970B-8B0BD2CE9D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F86C178-05D2-4EEA-970B-8B0BD2CE9D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F86C178-05D2-4EEA-970B-8B0BD2CE9D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F86C178-05D2-4EEA-970B-8B0BD2CE9D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139CBB96-9A18-48E7-AAD6-DE9B13B78FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139CBB96-9A18-48E7-AAD6-DE9B13B78FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139CBB96-9A18-48E7-AAD6-DE9B13B78FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139CBB96-9A18-48E7-AAD6-DE9B13B78FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
