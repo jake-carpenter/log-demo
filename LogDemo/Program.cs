@@ -14,21 +14,12 @@ builder.Services.AddScoped<ClassFromDependency>();
 var app = builder.Build();
 
 // More Serilog setup
-app.UseSerilogRequestLogging(
-    opt =>
-    {
-        opt.IncludeQueryInRequestPath = false; // default
-        opt.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
-        {
-            // Example of what you can add to request logs
-            diagnosticContext.Set("QueryString", httpContext.Request.QueryString);
-        };
-    });
+app.UseSerilogRequestLogging();
 
 // API setup
 app.MapGet(
     "/",
-    (HttpContext context, ILogger serilogLogger, ClassFromDependency dependency) => // NOTE: This is Serilog's ILogger
+    (ILogger serilogLogger, ClassFromDependency dependency) => // NOTE: This is Serilog's ILogger
     {
         serilogLogger.Information("Hello from '/'");
 
